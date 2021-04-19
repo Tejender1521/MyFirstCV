@@ -5,6 +5,8 @@ $(document).ready(function(){
          dropRadius:10
      });
    
+     
+  
      const bars = document.querySelectorAll('.progress__bar');
      
 
