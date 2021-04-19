@@ -319,3 +319,65 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
     font-size: 16px;
     text-transform: uppercase;
 }
+
+
+/* RESPONSIVENESS */
+ 
+@media (max-width: 1280px) {
+    .container{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    section.profile {
+        flex-direction: column;
+        align-items: flex-start;
+        clip-path: none;
+    }
+
+    section.profile .left{
+        margin-bottom: 2rem;
+    }
+
+    section.profile .right{
+        align-self: flex-end;
+    }
+
+}
+
+
+@media (max-width: 970px) {
+    section.skills .content{
+        display: block;
+    }
+   
+    section.skills .content .left{
+        margin-bottom: 6rem;
+    }
+
+}
+
+@media(max-width: 768px){
+    section.about .content{
+        display: block;
+    }
+
+    section.about .content .left{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:576px){
+    section.profile {
+        align-self: center;
+    }
+
+    section.profile .right{
+        align-self: center;
+    }
+
+    section.profile .left{
+        margin-bottom: 6rem;
+    }
+}
