@@ -381,3 +381,42 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
         margin-bottom: 6rem;
     }
 }
+
+@media (max-width: 450px) {
+    section.profile{
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin: 12px;
+        clip-path:none;
+        padding-bottom: 4rem;
+    }
+
+
+}
+
+@media (max-width: 370px) {
+    section.profile{
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin: 12px;
+        clip-path:none;
+        padding-bottom: 4rem;
+    }
+    section.profile .right ul.contact{
+        list-style-type: none;
+        margin-bottom: 2rem;
+    
+    }
+    section.profile .right ul.contact li{
+        color: var(--ternary);
+        margin-bottom: 0.7rem;
+        font-size: 12px;
+    
+    }
+
+
+}
