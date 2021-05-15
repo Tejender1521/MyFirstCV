@@ -4,6 +4,11 @@ $(document).ready(function(){
          resolution: 512,
          dropRadius:15
      });
+    
+     $('.container').ripples({
+        resolution: 512,
+        dropRadius:10
+    });
    
      
   
