@@ -188,7 +188,7 @@ section.profile .left p b{
 }
 
 .section__headings{
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 500;
     color: var(--pure);
     margin-bottom: 3rem;
@@ -206,12 +206,15 @@ main{
 .section__headings::after{
     content: '';
     height: 3px;
-    width: 80px;
+    width: 120px;
     position: absolute;
-    top: 20px;
+    top: 35px;
     left: 0;
-    border: 1px double var(--danger);
-}
+    border: 1px double var(--danger); 
+ 
+} 
+
+
 
 
 
