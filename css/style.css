@@ -210,11 +210,9 @@ main{
     position: absolute;
     top: 35px;
     left: 0;
-    border: 1px double var(--danger); 
- 
-} 
-
-
+    /* border: 1px double var(--danger);  */
+    background: linear-gradient(to right,var(--secondary),var(--success));
+}  
 
 
 
@@ -450,6 +448,9 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
 }
 
 @media (max-width: 370px) {
+    section {
+        padding: 1rem;
+    }
     section.profile{
         background-color: var(--black);
         display: flex;
