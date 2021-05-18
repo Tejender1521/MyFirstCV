@@ -440,24 +440,24 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
         align-items: center;
         padding: 2rem;
         margin: 12px;
-        clip-path:none;
+        clip-path:polygon(0 0,100% 0,100% 85%,1% 100%,30% 100%,0 90%);
         padding-bottom: 4rem;
+    }
+    section {
+        padding: 1rem;
     }
 
 
 }
 
 @media (max-width: 370px) {
-    section {
-        padding: 1rem;
-    }
     section.profile{
         background-color: var(--black);
         display: flex;
         align-items: center;
         padding: 2rem;
         margin: 12px;
-        clip-path:none;
+        clip-path:polygon(0 0,100% 0,100% 85%,1% 100%,30% 100%,0 90%);
         padding-bottom: 4rem;
     }
     section.profile .right ul.contact{
