@@ -312,6 +312,10 @@ section.skills .content .left .inner__right
 {
     margin-left: 2.1rem;
 }
+section.skills .content .left .inner__left
+{
+    margin-left: 2.1rem;
+}
 #blockset1
 {
     display: block ruby;
@@ -609,13 +613,13 @@ footer {
         margin-bottom: 6rem;
     }
 
-    section.partners .brands__wrapper{
+    /* section.partners .brands__wrapper{
         flex-wrap: wrap;
     }
 
     section.partners .brands__wrapper img{
         margin-bottom: 2rem;
-    }
+    } */
 
 }
 
@@ -651,6 +655,10 @@ footer {
 
     section.profile .left{
         margin-bottom: 6rem;
+    }
+
+    section.skills .content .left{
+        display: block;
     }
 
     section.work .wrapper .portfolio .tabs ul{
