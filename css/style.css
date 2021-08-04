@@ -31,8 +31,8 @@
 body{
     font-family: 'IBM Plex Sans', sans-serif;
     background: var(--dark);
-    
-    height: 1200px;
+    padding-bottom: 4rem;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -372,6 +372,196 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
 }
 
 
+
+/* GALLERY SLIDER AND MY WORKS SECTION  */
+
+section.work .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 50px;
+
+}
+
+
+section.work .wrapper .portfolio .tabs ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+section.work .wrapper .portfolio .tabs ul li a{
+    color: var var(--fade);
+    border-bottom: 1px solid transparent;
+    padding: 10px 15px;
+    font-size:14px;
+    letter-spacing: 2px;
+}
+
+
+section.work .wrapper .portfolio .tabs ul li a.active {
+    border-color:  var(--info);
+    color: var(--info);
+    transition: all 0.3s ease-in-out;
+}
+
+section.work .wrapper .portfolio .portfolio__wrapper{
+    margin-top: 4rem;
+    display: flex;
+}
+section.work .wrapper .portfolio .portfolio__wrapper .item{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+section.work .wrapper .portfolio .portfolio__wrapper a img{
+    display: block; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+section.work .wrapper .slider__wrapper .slider .slide p {
+    color: var(--ternary);
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+
+section.work .wrapper .slider__wrapper .slider .slide img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section.work .wrapper .slider__wrapper .slider .slide h2{
+    font-size: 16px;
+    color: var(--info);
+    margin-top: 1rem;
+}
+section.work .wrapper .slider__wrapper .slider .slide h6 {
+    color: var(--ternary);
+    margin-top: 1rem;
+}
+
+section.work .wrapper .slider__wrapper .slider .slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.work .wrapper .slider__wrapper {
+    overflow: hidden;
+}
+
+section.partners .brands__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+section.contact .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+section.contact .wrapper .left > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+section.contact .wrapper .left > div div:nth-child(1){
+    margin-right: 10px;
+}
+
+
+section.contact .wrapper .left h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+section.contact .wrapper .left{
+    color: var(--ternary);
+}
+
+section.contact .wrapper .left h4 + span{
+    font-weight: 100;
+    font-size: 14px;
+}
+
+section.contact .wrapper .right .form__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+section.contact .wrapper .right .form__group > div {
+    display: flex;
+    flex-direction: column;
+}
+section.contact .wrapper .right .form__group > div label {
+    color: var(--ternary);
+    margin-bottom: 8px;
+}
+
+section.contact .wrapper .right .form__group > div input, section.contact .wrapper .right .form__group.textarea__wrapper textarea {
+    padding: 10px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid var(--dark-blue);
+    color: var(--ternary);
+    font-size: 16px;
+}
+
+section.contact .wrapper .right .form__group > div input:focus, section.contact .wrapper .right .form__group.textarea__wrapper textarea {
+    border-color: var(--secondary);
+    outline: none;
+}
+
+section.contact .wrapper .right .form__group.textarea__wrapper
+{
+    display: block;
+    width: 100%;
+}
+
+section.contact .wrapper .right button {
+    background: var(--info);
+    border: none;
+    padding: 1rem 2rem;
+    color: var(--pure);
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+section.contact .wrapper .right button:hover {
+    background: var(--secondary);
+}
+
+footer {
+    background: var(--footer);
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 14px;
+    color: var(--ternary);
+}
+
+
+
 /* RESPONSIVENESS */
  
 @media (max-width: 1280px) {
@@ -395,6 +585,18 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
         align-self: flex-end;
     }
 
+    section.work .wrapper {
+        display: block;
+    }
+
+    section.work .wrapper .slider__wrapper {
+        margin-bottom: 8rem;
+    }
+
+    section.partners {
+        margin-top: 4rem;
+    }
+
 }
 
 
@@ -407,6 +609,14 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
         margin-bottom: 6rem;
     }
 
+    section.partners .brands__wrapper{
+        flex-wrap: wrap;
+    }
+
+    section.partners .brands__wrapper img{
+        margin-bottom: 2rem;
+    }
+
 }
 
 @media(max-width: 768px){
@@ -415,7 +625,18 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
     }
 
     section.about .content .left{
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    section.contact .wrapper {
+        display: block;
+    }
+
+    section.contact .wrapper .left {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
@@ -430,6 +651,22 @@ section.skills .skills__wraper .skill-box .progress__wrap .progress__bar .toolti
 
     section.profile .left{
         margin-bottom: 6rem;
+    }
+
+    section.work .wrapper .portfolio .tabs ul{
+        flex-wrap: wrap;
+    }
+
+    section.work .wrapper .portfolio .tabs ul li {
+        margin-bottom: 4rem;
+    }
+
+    section.work .wrapper .portfolio .portfolio__wrapper {
+        margin-top: 0;
+    }
+
+    section.contact .wrapper .right .form__group{
+        grid-template-columns: 1fr;
     }
 }
 
