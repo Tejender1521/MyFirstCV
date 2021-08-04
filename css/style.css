@@ -674,7 +674,8 @@ footer {
     }
 
     section.contact .wrapper .right .form__group{
-        grid-template-columns: 1fr;
+        display: block;
+        /* grid-template-columns: 1fr; */
     }
 }
 
